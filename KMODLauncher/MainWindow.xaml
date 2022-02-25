@@ -1,0 +1,20 @@
+﻿<Window x:Class="KMODLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMODLauncher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,-23,-16">
+        <Label x:Name="main" Content="KMOD Launcher&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Label Content="v1.0" HorizontalAlignment="Left" Margin="350,49,0,0" VerticalAlignment="Top" FontStyle="Italic" Foreground="#FF868686"/>
+        <ComboBox x:Name="Installation" HorizontalAlignment="Left" Margin="218,186,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Launch The Most Recent KMOD" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Height="35" Width="203" Click="Button_Click"/>
+        <Button Content="Launch Selected Version" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" Height="35" Width="203" Click="Button_Click_1"/>
+        <Label x:Name="LOG" Content="Log" HorizontalAlignment="Right" Margin="0,319,213,0" VerticalAlignment="Top" Visibility="Hidden" Height="89" Width="587"/>
+        <Button x:Name="Download" Content="Download Selected version" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Height="35" Width="203" Click="Download_Click"/>
+        <TextBox x:Name="textbot" HorizontalAlignment="Left" Margin="218,234,0,0" TextWrapping="Wrap" Text="0.0.9" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
